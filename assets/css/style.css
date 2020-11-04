@@ -1,0 +1,57 @@
+/* remove default browser-enforced styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* apply styles to <header> */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    background-color: #1f3758;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/* end styles to <header> */
+
+/* apply style to hero section */
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/night_apocalypse_by_olgola_de4d2vm.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* end style to hero section */
