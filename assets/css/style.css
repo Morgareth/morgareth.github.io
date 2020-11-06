@@ -128,3 +128,15 @@ header nav ul li a {
     font-size: 18px;
     line-height: 1.5;
 }
+
+.sample-work-grid-container {
+    display: grid;
+}
+
+.sample-work-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+  }
