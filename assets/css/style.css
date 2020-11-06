@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+/* apply general section styles */
+* :root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+html {
+    scroll-padding-top: 30px;
+}
+
+/* section {
+    padding: 60px;
+} */
+
+.section-title {
+    display: flex;
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-right: 3px solid;
+    padding: 0 20px 20px 0;
+    text-align: right;
+    margin: 0 20px 35px 0;
+}
+
+/* .primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+} */
+/* end general section styles */
+
 /* apply styles to <header> */
 header {
     display: flex;
@@ -55,3 +89,43 @@ header nav ul li a {
     background-position: center;
 }
 /* end style to hero section */
+
+/* apply style to about-me section */
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step h3 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    flex: 1 30%;
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+.step-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
