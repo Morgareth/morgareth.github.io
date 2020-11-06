@@ -6,7 +6,7 @@
 }
 
 /* apply general section styles */
-* :root {
+:root {
     --primary-color: #fce138;
     --secondary-color: #024e76;
     --tertiary-color: #39a6b2;
@@ -20,14 +20,10 @@ html {
     padding: 60px;
 } */
 
-.section-title {
-    display: flex;
+.title-formating {
     font-size: 48px;
-    color: var(--secondary-color);
-    border-right: 3px solid;
-    padding: 0 20px 20px 0;
     text-align: right;
-    margin: 0 20px 35px 0;
+    padding-right: 10px;
 }
 
 /* .primary-border {
@@ -91,7 +87,7 @@ header nav ul li a {
 /* end style to hero section */
 
 /* apply style to about-me section */
-.step {
+.title {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -99,15 +95,15 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    color: var(--secondary-color);
 }
 
-.step h3 {
-    color: var(--secondary-color);
+.title h3 {
     font-size: 46px;
     flex: 1 30%;
 }
 
-.step-info {
+.title-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
@@ -115,17 +111,20 @@ header nav ul li a {
     text-align: left;
 }
 
-.step-text {
+.title-text {
     flex: 12;
+    padding-left: 10px;
+    border-left: 3px solid;
 }
 
-.step-text h4 {
+/* .title-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: var(--secondary-color);
-}
+} */
 
-.step-text p {
+.title-text p {
     color: var(--tertiary-color);
     font-size: 18px;
+    line-height: 1.5;
 }
