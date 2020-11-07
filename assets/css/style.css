@@ -130,13 +130,34 @@ header nav ul li a {
 }
 
 .sample-work-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
     display: grid;
-}
-
-.sample-work-grid-item {
-    width: 200px;
-    height: 50px;
-    background-color: orange;
-    border: solid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 10px;
+  }
+  
+  .sample-work-grid-item {
+    /* background-color: orange; */
+    border: 5px solid var(--secondary-color);
+    padding: 1em;
     color: black;
+  }
+  
+  .sample1 {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    position: relative;
+    background-image: url(../images/Run-Buddy\ Screenshot.png);
+    background-size: 120%;
+  }
+
+  .sample1 a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
