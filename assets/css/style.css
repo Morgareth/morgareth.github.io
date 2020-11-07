@@ -64,9 +64,22 @@ header nav ul li a {
 /* end styles to <header> */
 
 /* apply style to hero section */
+.hero-wrapper {
+    display: flex;
+}
+
+.profile-img {
+    height: 400px;
+    width: 25%;
+    margin-bottom: 25px;
+    background-image: url("../images/Profile-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .hero {
     height: 400px;
-    width: 100%;
+    width: 75%;
     margin-bottom: 25px;
     background-image: url("../images/night_apocalypse_by_olgola_de4d2vm.jpg");
     background-size: cover;
@@ -187,3 +200,31 @@ header nav ul li a {
     background-image: url(../images/Horiseon-Screenshot.png);
     background-size: cover;
 }
+/* end specific formating for sample work section */
+
+/* apply specific formating for contact me section */
+.contact-me-list {
+    margin: 7px 0;
+}
+
+.contact-me-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-me-list ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+}
+
+.contact-me-list ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+/* end specific formating for contact me section */
