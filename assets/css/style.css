@@ -131,7 +131,7 @@ header nav ul li a {
     max-width: 940px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-rows: repeat(3, 200px);
     grid-gap: 10px;
 }
 
@@ -142,7 +142,7 @@ header nav ul li a {
 }
 
 .subtitle {
-    font-size: 26px;
+    font-size: 18px;
     position: absolute;
     bottom: 10px;
     color: var(--primary-color);
@@ -150,7 +150,7 @@ header nav ul li a {
 }
 
 .subtitle h5 {
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .sample-work-grid-item a:before {
@@ -215,10 +215,103 @@ header nav ul li a {
     font-size: 1.55vw;
     text-decoration: none;
 }
-
-.contact-me-list ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-}
 /* end specific formating for contact me section */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /* apply media styles to <header> */
+    header {
+        position: relative;
+        padding-bottom: 15px;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    /* end media styles to <header> */
+
+    /* apply media styles to hero section */
+    .profile-img {
+        width: 45%;
+    }
+
+    .hero {
+        width: 55%;
+    }
+    /* end media styles to hero section */
+    
+    /* apply title and artical section styles */
+    .artical {
+        margin: 10px auto;
+    }
+    .title-formating {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .artical-wrapper {
+        flex: 2 100%;
+        text-align: center;
+    }
+
+    .artical-text {
+        border-left: none;
+        border-top: 3px solid;
+        padding: 10px 0 0 0;
+    }
+    /* end title and artical section styles */
+
+    /* apply contact me section style */
+    .contact-me-list ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-me-list ul li a {
+        font-size: 20px;
+    }
+    /* end contact me section style */
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    /* apply sample work section style */
+    .sample-work-grid-container {
+        grid-template-rows: repeat(4, 150px);
+    }
+
+    .sample1 {
+        grid-column: 1/ span 3;
+    }
+
+    .sample4 {
+        grid-row: 3/ span 2;
+    }
+    /* end sample work section style */
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* apply media styles to hero section */
+    .profile-img {
+        width: 55%;
+    }
+
+    .hero {
+        width: 45%;
+    }
+    /* end media styles to hero section */
+}
