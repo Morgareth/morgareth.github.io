@@ -128,17 +128,16 @@ header nav ul li a {
     color: black;
 }
 
-.sample-work-grid-item h4, h5 {
+.subtitle {
     font-size: 26px;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
-.sample-work-grid-item h5 {
+.subtitle h5 {
     font-size: 20px;
-    bottom: 10px;
 }
 
 .sample-work-grid-item a:before {
@@ -155,5 +154,36 @@ header nav ul li a {
     grid-row: 1/ span 2;
     position: relative;
     background-image: url(../images/Run-Buddy-Screenshot.png);
+    background-size: cover;
+}
+
+.sample2 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Fun-With-Java-Screenshot.png);
+    background-size: cover;
+}
+
+.sample3 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Grumpy-Cat-Screenshot.png);
+    background-size: cover;
+}
+
+.sample4 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Weeknd-Fanpage-Screenshot.png);
+    background-size: cover;
+}
+
+.sample5 {
+    grid-column: 2/ span 2;
+    position: relative;
+    background-image: url(../images/Horiseon-Screenshot.png);
     background-size: cover;
 }
