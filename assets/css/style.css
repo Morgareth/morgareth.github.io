@@ -5,6 +5,24 @@
     box-sizing: border-box;
 }
 
+/* apply general section styles */
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+html {
+    scroll-padding-top: 30px;
+}
+
+.title-formating {
+    font-size: 48px;
+    text-align: right;
+    padding-right: 10px;
+}
+/* end general section styles */
+
 /* apply styles to <header> */
 header {
     display: flex;
@@ -46,12 +64,167 @@ header nav ul li a {
 /* end styles to <header> */
 
 /* apply style to hero section */
+.hero-wrapper {
+    display: flex;
+}
+
+.profile-img {
+    height: 400px;
+    width: 25%;
+    margin-bottom: 25px;
+    background-image: url("../images/Profile-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .hero {
     height: 400px;
-    width: 100%;
+    width: 75%;
     margin-bottom: 25px;
     background-image: url("../images/night_apocalypse_by_olgola_de4d2vm.jpg");
     background-size: cover;
     background-position: center;
 }
 /* end style to hero section */
+
+/* apply artical style */
+.artical {
+    /* margin: 50px auto; */
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+}
+
+.artical h3 {
+    font-size: 36px;
+    flex: 1 30%;
+}
+
+.artical-wrapper {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+
+.artical-text {
+    flex: 12;
+    padding-left: 40px;
+    border-left: 3px solid;
+}
+
+/* apply specific formating for about me section */
+.artical-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* end specific formating for about me section */
+
+/* apple specific formating for sample work section */
+.sample-work-grid-container {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 10px;
+}
+
+.sample-work-grid-item {
+    border: 5px solid var(--secondary-color);
+    padding: 1em;
+    color: black;
+}
+
+.subtitle {
+    font-size: 26px;
+    position: absolute;
+    bottom: 10px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.subtitle h5 {
+    font-size: 20px;
+}
+
+.sample-work-grid-item a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sample1 {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    position: relative;
+    background-image: url(../images/Run-Buddy-Screenshot.png);
+    background-size: cover;
+}
+
+.sample2 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Fun-With-Java-Screenshot.png);
+    background-size: cover;
+}
+
+.sample3 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Grumpy-Cat-Screenshot.png);
+    background-size: cover;
+}
+
+.sample4 {
+    /* grid-column: 1/ span 2;
+    grid-row: 1/ span 2; */
+    position: relative;
+    background-image: url(../images/Weeknd-Fanpage-Screenshot.png);
+    background-size: cover;
+}
+
+.sample5 {
+    grid-column: 2/ span 2;
+    position: relative;
+    background-image: url(../images/Horiseon-Screenshot.png);
+    background-size: cover;
+}
+/* end specific formating for sample work section */
+
+/* apply specific formating for contact me section */
+.contact-me-list {
+    margin: 7px 0;
+}
+
+.contact-me-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-me-list ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+}
+
+.contact-me-list ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+/* end specific formating for contact me section */
