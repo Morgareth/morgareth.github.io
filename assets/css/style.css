@@ -16,23 +16,11 @@ html {
     scroll-padding-top: 30px;
 }
 
-/* section {
-    padding: 60px;
-} */
-
 .title-formating {
     font-size: 48px;
     text-align: right;
     padding-right: 10px;
 }
-
-/* .primary-border {
-    border-color: var(--primary-color);
-}
-
-.secondary-border {
-    border-color: var(--tertiary-color);
-} */
 /* end general section styles */
 
 /* apply styles to <header> */
@@ -86,9 +74,9 @@ header nav ul li a {
 }
 /* end style to hero section */
 
-/* apply style to about-me section */
-.title {
-    margin: 50px auto;
+/* apply artical style */
+.artical {
+    /* margin: 50px auto; */
     padding-bottom: 50px;
     width: 80%;
     display: flex;
@@ -98,12 +86,12 @@ header nav ul li a {
     color: var(--secondary-color);
 }
 
-.title h3 {
-    font-size: 46px;
+.artical h3 {
+    font-size: 36px;
     flex: 1 30%;
 }
 
-.title-info {
+.artical-wrapper {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
@@ -111,53 +99,61 @@ header nav ul li a {
     text-align: left;
 }
 
-.title-text {
+.artical-text {
     flex: 12;
-    padding-left: 10px;
+    padding-left: 40px;
     border-left: 3px solid;
 }
 
-/* .title-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-} */
-
-.title-text p {
+/* apply specific formating for about me section */
+.artical-text p {
     color: var(--tertiary-color);
     font-size: 18px;
     line-height: 1.5;
 }
+/* end specific formating for about me section */
 
+/* apple specific formating for sample work section */
 .sample-work-grid-container {
     max-width: 940px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 150px);
     grid-gap: 10px;
-  }
-  
-  .sample-work-grid-item {
-    /* background-color: orange; */
+}
+
+.sample-work-grid-item {
     border: 5px solid var(--secondary-color);
     padding: 1em;
     color: black;
-  }
-  
-  .sample1 {
-    grid-column: 1/ span 2;
-    grid-row: 1/ span 2;
-    position: relative;
-    background-image: url(../images/Run-Buddy\ Screenshot.png);
-    background-size: 120%;
-  }
+}
 
-  .sample1 a:before {
+.sample-work-grid-item h4, h5 {
+    font-size: 26px;
+    position: absolute;
+    bottom: 30px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.sample-work-grid-item h5 {
+    font-size: 20px;
+    bottom: 10px;
+}
+
+.sample-work-grid-item a:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-  }
+}
+
+.sample1 {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    position: relative;
+    background-image: url(../images/Run-Buddy-Screenshot.png);
+    background-size: cover;
+}
