@@ -147,12 +147,14 @@ header nav ul li a {
     bottom: 10px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    z-index: 3;
 }
 
 .subtitle h5 {
     font-size: 12px;
 }
 
+/* prep work for web link in grid */
 .sample-work-grid-item a:before {
     content: '';
     position: absolute;
@@ -162,6 +164,25 @@ header nav ul li a {
     bottom: 0;
 }
 
+/* setting up gradient over images */
+.sample-work-grid-item a:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* turn on gradient over image when mouse hover */
+.sample-work-grid-item a:hover::after {
+    opacity: 1;
+}
+
+/* setting up grids with images */
 .sample1 {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
