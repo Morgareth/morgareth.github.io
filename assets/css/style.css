@@ -155,17 +155,17 @@ header nav ul li a {
 }
 
 /* prep work for web link in grid */
-.sample-work-grid-item a:before {
+/* .sample-work-grid-item a:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-}
+} */
 
 /* setting up gradient over images */
-.sample-work-grid-item a:after {
+.sample-work-grid-item:after {
     content: "";
     height: 100%;
     width: 100%;
@@ -178,7 +178,7 @@ header nav ul li a {
 }
 
 /* turn on gradient over image when mouse hover */
-.sample-work-grid-item a:hover::after {
+.sample-work-grid-item:hover::after {
     opacity: 1;
 }
 
