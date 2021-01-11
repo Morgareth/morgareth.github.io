@@ -187,13 +187,14 @@ header nav ul li a {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
     position: relative;
-    background-image: url(../images/Run-Buddy-Screenshot.png);
+    background-image: url(../images/trivia-night.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .sample2 {
     position: relative;
-    background-image: url(../images/Fun-With-Java-Screenshot.png);
+    background-image: url(../images/Run-Buddy-Screenshot.png);
     background-size: cover;
 }
 
