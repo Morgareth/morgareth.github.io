@@ -5,7 +5,6 @@ Matthew Damron Profile Page
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [License](#license)
 - [Language](#language)
 - [Contributors](#contributors)
 - [Questions](#questions)
@@ -15,10 +14,6 @@ I'm a developer in training at the University of Utah click on the link below to
 
 ## Installation
 No installation required live website [Matthew Damron Portfolio](https://matthewdamron.github.io)
-
-## License
-![GitHub](https://img.shields.io/github/license/matthewdamron/budget-tracker)<br />
-This application is covered by the MIT license. 
 
 ## Language
 <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
