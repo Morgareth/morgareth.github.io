@@ -23,7 +23,7 @@ function Nav(props) {
             <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul className='ml-auto navbar-nav navbar-right'>
                     {categories.map((category) => (
-                    <li className={`mx-2 nav-item ${currentCategory.name===category.name && 'navActive' }`}
+                    <li className={`m-2 nav-item ${currentCategory.name===category.name && 'navActive' }`}
                         key={category.name}>
                         <span onClick={()=> {setCurrentCategory(category)}}>
                             {capitalizeFirstLetter(category.name)}
