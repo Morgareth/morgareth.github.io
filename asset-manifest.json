@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.219c6c7a.chunk.css",
+    "main.js": "/static/js/main.04abc908.chunk.js",
+    "main.js.map": "/static/js/main.04abc908.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b7636553.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b7636553.js.map",
+    "static/js/2.51170bac.chunk.js": "/static/js/2.51170bac.chunk.js",
+    "static/js/2.51170bac.chunk.js.map": "/static/js/2.51170bac.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.219c6c7a.chunk.css.map": "/static/css/main.219c6c7a.chunk.css.map",
+    "static/js/2.51170bac.chunk.js.LICENSE.txt": "/static/js/2.51170bac.chunk.js.LICENSE.txt",
+    "static/media/Resume-Matthew-Damron.00ed238c.pdf": "/static/media/Resume-Matthew-Damron.00ed238c.pdf",
+    "static/media/horiseon.png": "/static/media/horiseon.6f1059d4.png",
+    "static/media/night-apocalypse.jpg": "/static/media/night-apocalypse.c3266333.jpg",
+    "static/media/note-taker.png": "/static/media/note-taker.34b50957.png",
+    "static/media/profile.jpg": "/static/media/profile.1fc9fefe.jpg",
+    "static/media/run-buddy.png": "/static/media/run-buddy.21e516ae.png",
+    "static/media/service-ticket-manager.png": "/static/media/service-ticket-manager.36bb55d6.png",
+    "static/media/trivia-night.png": "/static/media/trivia-night.956c6520.png",
+    "static/media/work-day-scheduler.png": "/static/media/work-day-scheduler.f873a500.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7636553.js",
+    "static/js/2.51170bac.chunk.js",
+    "static/css/main.219c6c7a.chunk.css",
+    "static/js/main.04abc908.chunk.js"
+  ]
+}
