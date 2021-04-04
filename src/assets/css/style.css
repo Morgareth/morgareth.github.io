@@ -37,7 +37,7 @@ body {
   letter-spacing: .1em;
   background: var(--ming);
   color: var(--alice-blue);
-  font-family: 'Poiret One', cursive;
+  font-family: 'New Tegomin', serif;
 
 }
 
@@ -47,7 +47,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
