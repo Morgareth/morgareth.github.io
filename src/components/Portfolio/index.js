@@ -8,8 +8,16 @@ function Portfolio() {
     const node = <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
     const express = <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
     const mysql = <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
+    const react = <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 
     const projects = [
+        {
+            name: 'threadSHARE',
+            language: [heroku, react, html, css, java, node, express, mysql],
+            image: 'threadshare.png',
+            deployURL: 'https://threadshare.herokuapp.com/',
+            githubURL: 'https://github.com/Mheyn95/threadshare'
+        },
         {
             name: 'Service Ticket Manager',
             language: [heroku, html, css, java, node, express, mysql],
