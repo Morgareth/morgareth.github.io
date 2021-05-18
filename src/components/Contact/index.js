@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
+    const [state, handleSubmit] = useForm("mbjqgpbd");
+    if (state.succeeded) {
+        return <p>Thank you for contacting me!</p>;
+    }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            setFormState({
-                [e.target.name]: e.target.value
-            });
-            console.log('Form', formState);
-        }
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!errorMessage) {
+    //         setFormState({
+    //             [e.target.name]: e.target.value
+    //         });
+    //         console.log('Form', formState);
+    //     }
+    // };
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
@@ -54,7 +59,7 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button type="submit" disabled={state.submitting}>Submit</button>
             </form>
         </section>
     )

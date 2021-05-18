@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+// import Test from './components/emailtest';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,8 +19,11 @@ function App() {
         name: 'contact'
     },
     {
-        name: "resume"
-    }
+        name: 'resume'
+    },
+    // {
+    //     name: 'test'
+    // }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -34,6 +38,8 @@ function App() {
         return <Contact />
       case categories[3].name:
         return <Resume />
+      // case categories[4].name:
+      //   return <Test />
     
       default:
         break;

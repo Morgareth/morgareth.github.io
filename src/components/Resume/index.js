@@ -8,7 +8,7 @@ function Resume() {
     const backendSkills = [
         `API's`, 'Node', 'Express', 'MySql, Sequelize', 'MongoDB, Mongoose'
     ]
-    const otherPrograming = [
+    const programingSkills = [
         'C#', 'VB.net', 'iLogic(VB)', 'AutoLisp(LISP)', 'Git'
     ]
     
@@ -18,23 +18,23 @@ function Resume() {
                 Download My <a href={resumePDF} download>Resume</a>
             <div>
                 <h4 className='mt-4'>Programing Skills</h4>
-                {otherPrograming.map((skills) => (
-                    <ul>
-                        <li>{skills}</li>
-                    </ul>
-                ))}
+                <ul key='programingSkills'>
+                    {programingSkills.map((skills) => (
+                        <li key={skills}>{skills}</li>
+                    ))}
+                </ul>
                 <h4 className='mt-4'>Web Front-end Skills</h4>
-                {frontendSkills.map((skills) => (
-                    <ul>
-                        <li>{skills}</li>
-                    </ul>
-                ))}
+                <ul key='frontendSkills'>
+                    {frontendSkills.map((skills) => (
+                        <li key={skills}>{skills}</li>
+                    ))}
+                </ul>
                 <h4 className='mt-4'>Web Back-end Skills</h4>
-                {backendSkills.map((skills) => (
-                    <ul>
-                        <li>{skills}</li>
-                    </ul>
-                ))}
+                <ul key='backendSkills'>
+                    {backendSkills.map((skills) => (
+                        <li key={skills}>{skills}</li>
+                    ))}
+                </ul>
             </div>
         </section>
     );

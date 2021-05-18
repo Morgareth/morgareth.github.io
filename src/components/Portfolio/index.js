@@ -1,14 +1,14 @@
 import React from 'react';
 
 function Portfolio() {
-    const heroku = <img alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
-    const html = <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-    const css = <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-    const java = <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-    const node = <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
-    const express = <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
-    const mysql = <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-    const react = <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+    const heroku = <img key="Heroku" alt="Heroku" src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
+    const html = <img key="HTML5" alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+    const css = <img key="CSS3" alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+    const java = <img key="JavaScript" alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+    const node = <img key="NodeJS" alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
+    const express = <img key="Express.js" alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>
+    const mysql = <img key="MySQL" alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
+    const react = <img key="React" alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 
     const projects = [
         {
@@ -67,9 +67,12 @@ function Portfolio() {
             <h3>Portfolio</h3>
             <div className='row row-cols-1 row-cols-lg-2'>
                 {projects.map((project) => (
-                    <div className='container' key={project.name} >
-                        <img src={require(`../../assets/images/${project.image}`).default}
-                            alt={project.name} className='img-thumbnail image' />
+                    <div className='container' key={project.name}>
+                        <img className='img-thumbnail image'
+                            key={project.image}
+                            src={require(`../../assets/images/${project.image}`).default}
+                            alt={project.name}
+                        />
                         <div className='middle'>
                             <a href={project.deployURL}>
                                 <h5 className='text'>{project.name}</h5>
